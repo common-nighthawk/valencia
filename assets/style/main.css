@@ -1,0 +1,28 @@
+body {
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.logo img {
+  display: block;
+  margin: auto;
+}
+
+.nav a {
+  text-align: center;
+  display: block;
+  color: #2A2C79;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#myCarousel {
+  margin: 20px auto;
+}
+
+#myCarousel img {
+  max-height: 400px;
+}
