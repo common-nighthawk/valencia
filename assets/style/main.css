@@ -16,6 +16,14 @@ a:link, a:visited, a:hover, a:active {
   margin: auto;
 }
 
+.nav .logo img {
+  height: 100px;
+}
+
+.nav .logo + div {
+  margin-top: 30px;
+}
+
 .nav a {
   text-align: center;
   display: block;
@@ -28,6 +36,20 @@ a:link, a:visited, a:hover, a:active {
   color: #ffcc33;
 }
 
+.banner {
+  background-color: #ffcc33;
+}
+
+.banner h2 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.banner h2, .banner p {
+  color: #2A2C79;
+  text-align: center;
+}
+
 #myCarousel {
   margin: 20px auto;
 }
@@ -36,16 +58,21 @@ a:link, a:visited, a:hover, a:active {
   max-height: 400px;
 }
 
-.content {
-  margin-bottom: 300px;
-}
-
-.content h3 {
+.content h3, .approach h4 {
   text-transform: uppercase;
 }
 
-.content a {
+.content a, .approach a {
   text-decoration: underline;
+}
+
+.approach h4, .approach p, .approach ul {
+  margin-top: 30px;
+}
+
+
+.footer {
+  margin-top: 300px;
 }
 
 .footer p {
