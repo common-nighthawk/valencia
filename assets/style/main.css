@@ -42,7 +42,7 @@ a:link, a:visited, a:hover, a:active {
 
 .banner h2 {
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 21px;
 }
 
 .banner h2, .banner p {
@@ -70,6 +70,35 @@ a:link, a:visited, a:hover, a:active {
   margin-top: 30px;
 }
 
+.articles img, .portfolio img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.articles > div {
+  margin-top: 25px;
+}
+
+.articles h5 {
+  margin-top: 0;
+}
+
+.portfolio h3 {
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.portfolio > div:first-of-type {
+  margin-bottom: 30px;
+}
+
+.portfolio img {
+  max-height: 100px;
+}
+
+.portfolio h5 {
+  margin-top: 0;
+}
 
 .footer {
   margin-top: 300px;
