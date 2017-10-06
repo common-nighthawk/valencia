@@ -3,6 +3,10 @@ body {
   color: #2A2C79;
 }
 
+h1, h2, h3, h4, h5 {
+  color: #2A2C79;
+}
+
 a:link, a:visited, a:hover, a:active {
   color: #2A2C79;
 }
@@ -58,7 +62,7 @@ a:link, a:visited, a:hover, a:active {
   max-height: 400px;
 }
 
-.content h3, .approach h4 {
+.content h3, .approach h4, .team h4 {
   text-transform: uppercase;
 }
 
@@ -98,6 +102,33 @@ a:link, a:visited, a:hover, a:active {
 
 .portfolio h5 {
   margin-top: 0;
+}
+
+.team h4 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.team h5 {
+  display: inline;
+  text-transform: uppercase;
+}
+
+.team img {
+  width: 100%;
+  margin: 20px auto;
+}
+
+.team a {
+  text-decoration: none;
+}
+
+.team p.top {
+  margin-top: 40px;
+}
+
+.team .hilight {
+  background-color: #ffcc33;
 }
 
 .footer {
