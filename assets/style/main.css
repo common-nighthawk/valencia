@@ -54,6 +54,15 @@ a:link, a:visited, a:hover, a:active {
   text-align: center;
 }
 
+.top {
+  margin-top: 40px;
+}
+
+.fancy-link {
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
 #myCarousel {
   margin: 20px auto;
 }
@@ -64,10 +73,6 @@ a:link, a:visited, a:hover, a:active {
 
 .content h3, .approach h4, .team h4 {
   text-transform: uppercase;
-}
-
-.content a, .approach a {
-  text-decoration: underline;
 }
 
 .approach h4, .approach p, .approach ul {
@@ -123,12 +128,25 @@ a:link, a:visited, a:hover, a:active {
   text-decoration: none;
 }
 
-.team p.top {
-  margin-top: 40px;
-}
-
 .team .hilight {
   background-color: #ffcc33;
+}
+
+.contact form {
+  padding: 20px;
+  background-color: #f2f2f2
+}
+
+.contact form input[type=text], .contact form input[type=email], .contact form input[type=tel], .contact form textarea {
+  width: 80%;
+  margin-bottom: 15px;
+}
+
+.contact form .btn {
+  background-color: buttonface;
+  color: black;
+  width: 70px;
+  height: 30px;
 }
 
 .footer {
@@ -139,13 +157,35 @@ a:link, a:visited, a:hover, a:active {
   text-align: center;
 }
 
+.visible-xs {
+  display: inline !important;
+  font-style: italic;
+}
+
 @media (max-width: 767px) {
-  .content > div {
+  .content > div, .articles > div, .approach > div, .team > div, .portfolio > div, .contact > div {
     padding: 0 30px;
     text-align: justified;
   }
 
   .content p {
     text-align: justify;
+  }
+
+  .big-nav {
+    margin-top: -22px;
+  }
+
+  .little-nav {
+    margin-top: -12px !important;
+  }
+
+  .banner {
+    margin-top: 10px
+  }
+
+  .portfolio img {
+    max-height: 300px;
+    margin-bottom: 20px;
   }
 }
