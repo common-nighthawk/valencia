@@ -67,8 +67,33 @@ a:link, a:visited, a:hover, a:active {
   margin: 20px auto;
 }
 
-#myCarousel img {
-  max-height: 400px;
+#myCarousel .carousel-inner {
+  height: 400px;
+}
+
+#myCarousel .carousel-inner .item > div:first-of-type {
+  height: 400px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+  background-position: 0 -40px;
+}
+
+#myCarousel .carousel-caption {
+  top: 20px;
+}
+
+#myCarousel .carousel-caption h3 {
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+#myCarousel .carousel-caption p {
+  max-width: 380px;
+  margin: auto;
+  color: #2A2C79;
+  line-height: 1.5;
 }
 
 .content h3, .approach h4, .team h4 {
@@ -166,6 +191,10 @@ a:link, a:visited, a:hover, a:active {
   .content > div, .articles > div, .approach > div, .team > div, .portfolio > div, .contact > div {
     padding: 0 30px;
     text-align: justified;
+  }
+
+  #myCarousel .carousel-inner {
+    height: 250px;
   }
 
   .content p {
