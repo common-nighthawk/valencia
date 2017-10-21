@@ -24,6 +24,7 @@ span {
 .logo img {
   display: block;
   margin: auto;
+  max-height: 180px;
 }
 
 .nav .logo img {
@@ -52,7 +53,7 @@ span {
 
 .banner h2 {
   text-transform: uppercase;
-  margin-bottom: 21px;
+  margin: 12px;
 }
 
 .banner h2, .banner p {
@@ -88,7 +89,7 @@ span {
   height: 400px;
   width: 100%;
   background-repeat: no-repeat;
-  background-position: center center;
+  /* background-position: center center; */
   background-size: 100%;
 }
 
@@ -112,8 +113,18 @@ span {
   text-transform: uppercase;
 }
 
-.approach h4, .approach p, .approach ul {
+.approach h4 {
+  margin-top: 15px;
+}
+
+.approach p, .approach ul {
   margin-top: 30px;
+}
+
+.mission {
+  margin-top: 40px;
+  text-align: center;
+  line-height: 1.5em;
 }
 
 .articles img, .portfolio img {
@@ -169,9 +180,30 @@ span {
   background-color: #ffcc33;
 }
 
+.team .partners h4 {
+  margin-top: 80px;
+}
+.team .partners > div {
+  height: 120px;
+  position: relative;
+}
+
+.team .partners img {
+  max-height: 94%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
 .contact form {
   padding: 20px;
   background-color: #f2f2f2
+}
+
+.post .content {
+  margin-top: 30px;
 }
 
 .contact form input[type=text], .contact form input[type=email], .contact form input[type=tel], .contact form textarea {
@@ -205,6 +237,10 @@ span {
     text-align: justified;
   }
 
+  .post .content {
+    padding: 0 30px;
+  }
+
   #myCarousel .carousel-inner {
     height: 250px;
   }
@@ -236,5 +272,9 @@ span {
   .portfolio img {
     max-height: 300px;
     margin-bottom: 20px;
+  }
+
+  .team .partners img {
+    max-width: 65%;
   }
 }
