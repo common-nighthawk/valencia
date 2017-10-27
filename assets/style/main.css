@@ -72,13 +72,8 @@ span {
 
 #myCarousel {
   margin: 20px auto;
-  position: absolute;
   width: 100vw;
-  left: 0;
-}
-
-#myCarousel + div {
-  margin-top: 440px;
+  max-width: 776px;
 }
 
 #myCarousel .carousel-inner {
@@ -88,9 +83,9 @@ span {
 #myCarousel .carousel-inner .item > div:first-of-type {
   height: 400px;
   width: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
-  /* background-position: center center; */
-  background-size: 100%;
+  background-position: center center;
 }
 
 #myCarousel .carousel-caption {
@@ -239,18 +234,6 @@ span {
 
   .post .content {
     padding: 0 30px;
-  }
-
-  #myCarousel .carousel-inner {
-    height: 250px;
-  }
-
-  #myCarousel .carousel-inner .item > div:first-of-type {
-    height: 250px;
-  }
-
-  #myCarousel + div {
-    margin-top: 280px;
   }
 
   .content p {

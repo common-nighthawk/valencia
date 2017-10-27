@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $.getJSON("https://www.googleapis.com/blogger/v3/blogs/2246949521770958212/posts?key=AIzaSyC2KvolQ8HF1xQfD0hyNnkvWPHJaDeZAwA", function(data) {
+  $.getJSON("https://www.googleapis.com/blogger/v3/blogs/651190750087447841/posts?key=AIzaSyC2KvolQ8HF1xQfD0hyNnkvWPHJaDeZAwA", function(data) {
     var posts = data["items"];
     for (i = 0; i < posts.length; i++) {
 
