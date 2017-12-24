@@ -103,7 +103,7 @@ span {
 }
 
 #myCarousel .carousel-caption p {
-  max-width: 380px;
+  max-width: 390px;
   margin: auto;
   color: #2A2C79;
   line-height: 1.5;
@@ -125,6 +125,25 @@ span {
   margin-top: 40px;
   text-align: center;
   line-height: 1.5em;
+}
+
+.post .left-nav {
+  margin-top: 5px;
+}
+
+.left-nav p {
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+.left-nav p, .left-nav ul {
+  margin-left: 75%;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.left-nav ul li {
+  list-style-type: none;
 }
 
 .articles img, .portfolio img {
