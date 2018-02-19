@@ -6,19 +6,23 @@ $(document).ready(function() {
     for (i = 0; i < posts.length; i++) {
       if (year == undefined || year == posts[i]["published"].substring(0, 4)) {
 
-        var match = /a href.*img.*src="(.*\.[a-zA-Z]{3})".*<\/a>/.exec(posts[i]["content"])
-        if (match) {
-          $(".image-"+i).html("<a href='post.html?" + posts[i]["id"] + "'><img src='" + match[1] + "'></a>");
-        }
-
-        var content = posts[i]["content"].replace(/<a href.*img.*<\/a>/g, "");
+        var content = posts[i]["content"];
         if (content.length > 1000) {
           content = content.substring(0, 1000);
           content = content + "..."
         }
 
-        $(".post-"+i).html(content + "<br><a class='fancy-link' href='post.html?" + posts[i]["id"] + "'>read more</a>");
-        $("<hr>").insertAfter($(".row:has(.post-"+i+")"));
+        var date = posts[i]["published"];
+        var title = posts[i]["title"];
+
+        var xyear = date.substring(0, 4);
+        var month = parseInt(date.substring(5, 7));
+        var day = parseInt(date.substring(8, 10));
+        var months = ['January ', 'February ', 'March ', 'April ', 'May ', 'June ', 'July ', 'August ', 'September ', 'October ', 'November ', 'December '];
+        var displayDate = "<span class='upper'>" + months[month] + day + ', ' + xyear + " - " + title + "</span>";
+
+        $(".post-"+i).html(displayDate + "<br>" + content + "<br><a class='fancy-link' href='post.html?" + posts[i]["id"] + "'>read more</a>");
+        $("<hr>").insertAfter($(".row:has(.post-"+(i-1)+")"));
       }
     }
   });
