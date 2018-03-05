@@ -7,8 +7,8 @@ $(document).ready(function() {
       if (year == undefined || year == posts[i]["published"].substring(0, 4)) {
 
         var content = posts[i]["content"];
-        if (content.length > 1000) {
-          content = content.substring(0, 1000);
+        if (content.length > 500) {
+          content = content.substring(0, 500);
           content = content + "..."
         }
 
